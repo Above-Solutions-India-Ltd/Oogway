@@ -1,0 +1,61 @@
+
+   
+      
+    <div id="chart_div"></div>
+    
+    
+<script>
+
+google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('datetime', 'Time of Day');
+        data.addColumn('number', 'CPU Memory usage');
+
+        data.addRows([
+           {% for i in result%}
+ 			[new {{i.0}},{{i.1}}],
+ 		   {% endfor %}
+        ]);
+
+
+        var options = {
+          title: 'CPU Memory Monitor',
+          width: 900,
+          height: 500,
+          
+          timeline: {
+          groupByRowLabel: true,
+          showRowLabels: true,
+        },
+        
+          
+          hAxis: {
+          title:"Time",
+          format: 'MM/dd/yy hh:mm',
+         
+          },
+          vAxis: {
+          	title:"Check memory",
+            
+            
+          }
+        };
+        
+			
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+
+
+
+      }
+
+
+
+
+
+</script>

@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: #666;
+    padding: 0 !important;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.section.no-pad-bot {
+    padding-bottom: 0;
+    background: #333;
+}
+#chart_div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modalPop {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.5);
+}
+
+.modalClose {
+    position: absolute;
+    top:0px;
+    right:0px;
+    background: url('http://static.fjcdn.com/pictures/Which+close+button+should+i+use+i+have+this+two_e08deb_5442440.png');
+    height:50px;
+    width:50px;
+    background-size: cover;
+    cursor:pointer;
+}
+
+.header {
+    background-color: rgb(63, 81, 181);
+    color: rgba(255, 255, 255, 0.87);
+    width: 100%;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.card {
+    height: 300px;
+    padding: 25px;
+    text-align: center;
+    transition: 400ms ease-out 50ms;
+    cursor: pointer;
+}
+
+.card-content {
+    color: #000 !important;
+    text-align: center;
+    width: 100%;
+}
+
+.card-content p {
+    
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 2em;
+    word-wrap: break-word;
+    padding: 35px 0;
+    border-radius: 0 0 2px 2px;
+    line-height: 30px;
+}
+
+.section {
+    padding: 4em 6em;
+}
+
+.textIcons {
+    font-size: 80px;
+    text-align: center;
+}
+
+.imgBlock {
+    background-color: #000;
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    border-radius: 90px;
+    margin: 10px auto 0;
+    text-transform: uppercase;
+}
+
+
+.imgRed {
+    background-color: #F44336;
+}
+
+.imgGreen {
+    background-color: #4CAF50;
+}
+
+.imgOrange {
+    background-color: #E65100;
+}
+
+.imgBlue {
+    background-color: #2196F3;
+}
+

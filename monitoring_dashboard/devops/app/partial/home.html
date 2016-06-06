@@ -1,0 +1,11 @@
+<div class="row">
+        <div class="col s12 m4" ng-repeat="(index,res) in result | orderBy:'-check.status' | unique:'client'">
+
+        <div class="card" ng-click="getDetails(res.client)">
+            <div class="imgBlock {{index}}" ng-class="styleClient(res.client)"><span class="textIcons">{{res.client.charAt(0)}}</span></div>
+            <div class="card-content white-text">
+                <p>{{res.client}}</p>
+            </div>
+        </div>
+    </div>
+</div>

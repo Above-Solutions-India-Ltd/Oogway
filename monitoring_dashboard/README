@@ -1,0 +1,41 @@
+Description : Ooghwa is an open source dashboard tool that works with Sensu.It used to be a front-end and backend both on tool that required MongoDb for storing dashbords you create and to store checks values.
+
+
+Prerequisite : First you have to install sensu and python
+  
+Ubuntu
+
+1. Sensu Installtion : https://sensuapp.org/docs/latest/installation-guide
+
+2. apt-get install python    
+
+Installtion Step :
+
+1.  clone the code from git using below url in terminal 
+	 git clone git@192.168.0.11:devops/monitoring_dashboard.git
+
+2. create virtual environment
+	virtualenv monitoring_dashboard
+
+3. Activate virtualenv from your terminal
+	source /monitoring_dashboard/bin/activate
+
+4. install Django into your virtualenv
+	pip install Django==1.8
+
+5. install corsheaders into your virtualenv
+	pip install django-cors-headers
+
+6. install requests into your virtualenv
+	pip install requests
+
+7. install pymango into your virtualenv
+	python -m pip install pymongo
+
+8. install dateutil parser into your virtualenv
+	
+
+
+
+
+

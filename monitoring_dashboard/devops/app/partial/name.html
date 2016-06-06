@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col s12 m4" ng-repeat="(index,name) in nameList | orderBy:'-status'">
+        <!--<a class="cardLink" href="#/content">-->
+        <a class="cardLink" ng-click="getDataPop(name.name)">
+            <div class="card">
+                <div class="imgBlock" ng-class="styleFunction(name.status)"><span class="textIcons">{{name.name.charAt(0)}}</span></div>
+                <div class="card-content white-text">
+                    <p>{{name.name}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

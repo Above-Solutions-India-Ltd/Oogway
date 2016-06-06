@@ -1,0 +1,70 @@
+
+      
+    <div id="chart_div"></div>
+    
+    
+<script>
+
+google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('datetime', 'Date Time');
+        data.addColumn('number', 'user');
+        data.addColumn('number', 'nice');
+        data.addColumn('number', 'system');
+        data.addColumn('number', 'idle');
+        data.addColumn('number', 'iowait');
+        data.addColumn('number', 'irq');
+       	data.addColumn('number', 'softirq');
+        data.addColumn('number', 'steal');
+        data.addColumn('number', 'guest');
+        data.addColumn('number', 'total');
+
+        data.addRows([
+           {% for i in result %}
+	[new {{i.10}},{{i.0}},{{i.1}},{{i.2}},{{i.3}},{{i.4}},{{i.5}},{{i.6}},{{i.7}},{{i.8}},{{i.9}}],
+
+			{% endfor %}
+        ]);
+
+
+        var options = {
+          title: 'Check CPU',
+          width: 900,
+          height: 500,
+          
+          timeline: {
+          groupByRowLabel: true,
+          showRowLabels: true,
+        },
+        
+          
+          hAxis: {
+          title:"Time",
+          format: 'MM/dd/yy hh:mm',
+         
+          },
+          vAxis: {
+          	title:"Check CPU",
+            
+            
+          }
+        };
+        
+			
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+
+
+
+      }
+
+
+
+
+
+</script>

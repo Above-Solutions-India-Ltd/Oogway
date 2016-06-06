@@ -1,0 +1,13 @@
+{% for i in mcheck %}
+
+<!--   <form action="/monitordetails/" action="get">
+<input type="datetime" name="fdate">
+<input type="datetime" name="tdate">
+<input type="text" name="proname" value={{proname}}>
+<input type = "text" name = "mtype" value = {{i}}>
+<input type="submit"> -->
+<a href="/monitordetails{{i}}/?proname={{proname}}&mtype={{i}}">{{i}}</a><br />
+<!--  </form> -->
+{% endfor %}
+
+<!-- &fdate={{mdategraph.presentdate}}&tdate={{mdategraph.lasthourdate}} -->
