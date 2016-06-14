@@ -54,7 +54,6 @@ Installtion Step :
 	8. install dateutil parser into your virtualenv
 		pip install python-dateutil	
 
-
 	9. Run the Django Application
 		python manage.py runserver
 
@@ -62,12 +61,12 @@ Installtion Step :
 ## Installation of Frontend code in Ubuntu:
 1. Create a folder in your lamp/xamp
 2. Copy the folder "devops" form git clone folder and past it to the folder in lamp/xamp
-3. change the url in /devops/app/js/services/services.js to your sensu url 
+3. Change the url in /devops/app/js/services/services.js to your sensu url 
 
 
 ## Runing the Application:
 	1.Once the url are all updated, we can go lamp/xamp and navigate to our project
-	2.we will find the list of project in the form of boxes with colors like Green, orange, red
+	2.We will find the list of project in the form of boxes with colors like Green, orange, red
 		colors indicate status of server
 			1. Green = good condition
 			2. Orange =  warning condition
@@ -84,5 +83,5 @@ For help with general setup and configuration issues please contact info@above-i
 
 
 The following distribution are supported
-	1.Ubuntu 14.14
-	2.Windows 7
+	1. Ubuntu 14.14
+	2. Windows 7
