@@ -70,7 +70,7 @@ Installtion Step :
 		colors indicate status of server
 			1. Green = good condition
 			2. Orange =  warning condition
-			3. Red = Critical Condition
+			3. Red = critical condition
 	3. User can click on boxes to check which parameter leads to change in color default should be green
 	4. User can also check the parameters graph and find from how long that parameter has changed its status 
 
