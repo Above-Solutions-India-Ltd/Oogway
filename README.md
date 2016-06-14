@@ -31,7 +31,7 @@ Prerequisite : First you have to install sensu and python
 Installtion Step :
 
 	1.  clone the code from git using below url in terminal 
-	 	git clone git@192.168.0.11:devops/monitoring_dashboard.git
+	 	git clone git@github.com:Above-Solutions-India-Ltd/Oogway.git
 
 	2. create virtual environment
 		virtualenv monitoring_dashboard
