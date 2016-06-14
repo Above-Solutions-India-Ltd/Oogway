@@ -82,6 +82,6 @@ Installtion Step :
 For help with general setup and configuration issues please contact info@above-inc.com
 
 
-The following distribution are supported:
-	1. Ubuntu 14.14
-	2. Windows 7
+	The following distribution are supported:
+		1. Ubuntu 14.14
+		2. Windows 7
